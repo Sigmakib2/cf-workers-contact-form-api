@@ -29,7 +29,7 @@ Cloudflare Workers offer an impressive free tier, providing 100,000 requests per
 
 2. **Dynamic Field Extraction:** Extracts form fields dynamically based on the `fieldsToExtract` array, providing flexibility in handling different types of form submissions.
 
-3. **Honeypot Field Detection:** Includes a honeypot field (`honeypot`) to catch spam bots, identifying potential spam submissions and preventing them from being processed.
+3. **[Honeypot Field Detection:](https://github.com/Sigmakib2/cf-workers-contact-form-api?tab=readme-ov-file#honeypot-technique)** Includes a honeypot field (`honeypot`) to catch spam bots, identifying potential spam submissions and preventing them from being processed.
 
 4. **Discord Integration:** Sends form submissions to a Discord channel via a webhook (`discordWebhookUrl`), providing real-time notifications for new submissions.
 
@@ -139,7 +139,7 @@ In this code snippet, the server checks if the honeypot field in the request bod
 </form>
 ```
 
-It is better to set the honeypot field CSS style in saparate file because most of the bots avoids the saparate css or assets.
+**It is better to set the honeypot field CSS style in saparate file because most of the bots avoids the saparate css or assets.**
 
 In the HTML form example above, we've included a honeypot field within the form. This field is hidden from regular users using the style="display:none;" attribute, making it invisible on the webpage. However, bots that automatically fill out forms are likely to complete this hidden field.
 
